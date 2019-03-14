@@ -49,6 +49,7 @@ table {
 
 .wrap{
 	width: 1000px;
+	height: 1000px;
 	margin: 0 auto;
 	font-family: arial;
 }
@@ -131,4 +132,29 @@ table {
 	padding:5px;
 	text-align: center;
 	display: block;
+}
+
+.adBox{
+	width: 250px;
+	height: 95px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	background: darkgreen;
+	color: white;
+	text-align: center;
+}
+
+.adBox p{
+	padding: 30px;
+}
+
+.adBox .adClose{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background: brown;
+	color: white;
+	text-decoration: none;
+	padding: .5em;
 }

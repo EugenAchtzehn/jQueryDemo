@@ -57,4 +57,9 @@ $(document).ready(function(){
 		$('.content p').css('font-size','10px');
 	})
 
+	$('.adClose').click(function() { 
+		event.preventDefault();
+		$('.adBox').fadeOut();		
+	});
+
 });
