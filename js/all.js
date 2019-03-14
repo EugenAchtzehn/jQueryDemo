@@ -51,15 +51,30 @@ $(document).ready(function(){
 	$('.fontM').click(function(){
 		event.preventDefault();
 		$('.content p').css('font-size','16px');
+		//應用css()，設計字體放大縮小功能
 	})
 	$('.fontS').click(function(){
 		event.preventDefault();
 		$('.content p').css('font-size','10px');
+		//應用css()，設計字體放大縮小功能
 	})
 
 	$('.adClose').click(function() { 
 		event.preventDefault();
-		$('.adBox').fadeOut();		
+		$('.adBox').fadeOut();
+		//實作一個凍結在瀏覽器左下角的廣告欄		
 	});
+
+	$('.stoppable').click(function() { 
+		event.preventDefault();
+		$('.stoppableBox').stop().slideToggle(2000);
+		//實作一個可中斷動畫的效果
+	});
+	
+	$('.redStripe').click(function() { 
+		event.preventDefault();
+		$('.canvasSection').toggleClass('canvasAct');
+	});
+
 
 });

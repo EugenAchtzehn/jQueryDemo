@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	position: relative;
 }
 ol, ul {
 	list-style: none;
@@ -49,7 +50,7 @@ table {
 
 .wrap{
 	width: 1000px;
-	height: 1000px;
+	height: 700px;
 	margin: 0 auto;
 	font-family: arial;
 }
@@ -157,4 +158,51 @@ table {
 	color: white;
 	text-decoration: none;
 	padding: .5em;
+}
+
+.colorButton{
+	display: block;
+}
+
+.stoppableBox{
+	background: olive;
+	height: 100px;
+	width: 100px;
+}
+
+.canvasSection{
+	position: relative;
+	height: 600px;
+}
+
+.redStripe{
+	height: 100px;
+	background: darkred;
+	color: white;
+}
+
+.blackBody{
+	height: 500px;
+	background: black;
+	transition: 0.3s ease;
+	color: white;
+}
+
+.sideBar{
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	/* 讓其滿版的作法 */
+	width: 200px;
+	background-color: orange;
+	overflow: hidden;
+	transform: translateX(-200px);
+}
+
+.canvasAct .blackBody{
+	transform: translateX(200px);
+}
+
+.canvasAct .sideBar{
+	transform: translateX(0px);
 }
