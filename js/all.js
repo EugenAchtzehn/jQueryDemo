@@ -74,7 +74,25 @@ $(document).ready(function(){
 	$('.redStripe').click(function() { 
 		event.preventDefault();
 		$('.canvasSection').toggleClass('canvasAct');
+		//實作一個移入畫布的效果，黑色區塊為平移，紅色區塊為覆蓋
 	});
 
+	$('.initAnimate').click(function() { 
+		event.preventDefault();
+		$('.jackBox').toggleClass('jackInTheBox');
+		if (document.querySelector('.initAnimate').value == 'Jack in the box!'){
+			$('.initAnimate').val('再按一次重啟')
+		} else {
+			$('.initAnimate').val('Jack in the box!');
+		};
+		//引入Animate.css的動畫效果，並用if判斷式來切換button上的字樣，讓使用者了解狀態
+		//可用this.value，取代document.querySelector('.initAnimate').value
+	
+	});
+	$('.thisDemo li').click(function() { 
+		event.preventDefault();
+		$(this).toggleClass('active');
+		//用li的active切換，示範this只指定自身的功用
+	});
 
 });

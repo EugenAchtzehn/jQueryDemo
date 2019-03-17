@@ -184,8 +184,8 @@ table {
 .blackBody{
 	height: 500px;
 	background: black;
-	transition: 0.3s ease;
 	color: white;
+	transition: 0.3s ease;
 }
 
 .sideBar{
@@ -205,4 +205,21 @@ table {
 
 .canvasAct .sideBar{
 	transform: translateX(0px);
+}
+
+.jackBox{
+	width: 100px;
+	height: 100px;
+	background:pink;
+}
+
+.thisDemo li{
+	width: 300px;
+	padding: 2px;
+	text-align: center;
+}
+
+.thisDemo li:hover, .thisDemo li.active{
+	background: darkgreen;
+	color: white;
 }
