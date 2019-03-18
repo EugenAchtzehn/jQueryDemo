@@ -89,10 +89,35 @@ $(document).ready(function(){
 		//可用this.value，取代document.querySelector('.initAnimate').value
 	
 	});
+
 	$('.thisDemo li').click(function() { 
 		event.preventDefault();
 		$(this).toggleClass('active');
 		//用li的active切換，示範this只指定自身的功用
 	});
 
+	$('.addCart').click(function() { 
+		event.preventDefault();
+		$(this).parent().toggleClass('active');
+		//從this找到其對應的父元素，使其切換active狀態
+	});
+
+	$('.siblingDemo li').click(function() { 
+		$(this).addClass('active').siblings().removeClass('active');
+		//用siblings()找到同層的元素，載入自己的動畫，並移除同層的動畫
+	});
+
+	$('.findDemo li').click(function(e) {
+		e.preventDefault(); 
+		$(this).find('h3').toggleClass('active');
+		//使用find('selector')，讓點擊父元素時可以在子元素上產生動畫		
+	});
+
+	$('.question').click(function(e) { 
+		e.preventDefault();
+		$(this).find('h3').toggleClass('active').parent().siblings().find('h3').removeClass('active')
+		//讓子元素h3切成active，並取消其他同層h3的active
+		$(this).find('p').toggleClass('active').parent().siblings().find('p').removeClass('active');
+		//打開原先隱藏的p元素，並關閉其他打開的p元素
+	});
 });
