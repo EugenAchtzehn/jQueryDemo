@@ -160,5 +160,19 @@ $(document).ready(function () {
 	$('.removeBtn').on('click', function () {
 		$(this).parent().parent().remove();
 	});
+	//用jQ讓位於td(table division)下的btn，刪除隔兩層的父元素(table row)
+
+	$('.backToTop a').on('click', function () {
+		event.preventDefault();
+		$('html, body').animate({
+			scrollTop:0
+		}, 700);
+	});
+	//用animate實作回到頁頂的功能
+
+
+	$('a[href$=".pdf"]').addClass('fas fa-file-pdf');
+	$('a[href$=".png"]').addClass('fas fa-file-image');
+	//讓fontAwesome自動偵測a連結類型，並加上相關圖片
 
 });

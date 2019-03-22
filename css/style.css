@@ -312,3 +312,14 @@ table {
 td, th{
 	border: 1px solid gray;
 }
+
+.backToTop{
+	position: fixed;
+	bottom: 100px;
+	right: 0px;
+}
+
+.fontAwesomeDemo a{
+	text-decoration: none;
+	color: gray;
+}
