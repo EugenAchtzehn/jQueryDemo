@@ -8,7 +8,9 @@
 	<script src="js/all.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/fontawesome/fontawesome.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
 	<style>
 		.text {
 			display: none;
@@ -214,40 +216,40 @@
 			<ul>
 				<li>
 					<a href="#">涂爾幹</a>
-					<li></li>
-					<a href="#">馬克思</a>
-					<li></li>
-					<a href="#">韋伯</a>
-					<li></li>
-				</li>
-			</ul>
+				<li></li>
+				<a href="#">馬克思</a>
+				<li></li>
+				<a href="#">韋伯</a>
+				<li></li>
 		</li>
-		<li>
-			<a href="#">經濟學巨頭</a>
-			<ul>
-				<li>
-					<a href="#">海耶克</a>
-					<li></li>
-					<a href="#">凱因斯</a>
-					<li></li>
-					<a href="#">傅利曼</a>
-					<li></li>
-				</li>
-			</ul>
-		</li>
-		<li>
-			<a href="#">心理學巨頭</a>
-			<ul>
-				<li>
-					<a href="#">榮格</a>
-					<li></li>
-					<a href="#">佛洛伊德</a>
-					<li></li>
-					<a href="#">帕夫洛夫</a>
-					<li></li>
-				</li>
-			</ul>
-		</li>
+	</ul>
+	</li>
+	<li>
+		<a href="#">經濟學巨頭</a>
+		<ul>
+			<li>
+				<a href="#">海耶克</a>
+			<li></li>
+			<a href="#">凱因斯</a>
+			<li></li>
+			<a href="#">傅利曼</a>
+			<li></li>
+	</li>
+	</ul>
+	</li>
+	<li>
+		<a href="#">心理學巨頭</a>
+		<ul>
+			<li>
+				<a href="#">榮格</a>
+			<li></li>
+			<a href="#">佛洛伊德</a>
+			<li></li>
+			<a href="#">帕夫洛夫</a>
+			<li></li>
+	</li>
+	</ul>
+	</li>
 	</ul>
 	<div class="blocking"></div>
 	<div class="insertDemo">
@@ -294,7 +296,7 @@
 	</div>
 
 	<div class="blocking"></div>
-
+	<h3>Use fontAwesome to load images as font</h3>
 	<ul class="fontAwesomeDemo">
 		<li>
 			<a href="link/demo.png">圖片檔案</a>
@@ -303,6 +305,60 @@
 			<a href="link/demo.pdf">pdf檔案</a>
 		</li>
 	</ul>
+	<div class="blocking"></div>
+	<h3>載入燈箱效果plugin</h3>
+	<a href="images/image-1.jpg" data-lightbox="image-1" data-title="My caption">Image #1</a>
+	<a href="images/image-2.jpg" data-lightbox="roadtrip">Image #2</a>
+	<a href="images/image-3.jpg" data-lightbox="roadtrip">Image #3</a>
+	<a href="images/image-4.jpg" data-lightbox="roadtrip">Image #4</a>
 
+	<div class="blocking"></div>
+	<h3>載入swiper效果</h3>
+	<!-- Slider main container -->
+	<div class="swiper-container">
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide">
+				<a href="images/toystory.jpg" data-lightbox="image-1" data-title="Toy Story">
+					<img src="images/toystory.jpg" alt="Toy Story">
+				</a>
+			</div>
+			<div class="swiper-slide">
+				<img src="images/up.jpg" alt="Up">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/walle.jpg" alt="Walle">
+			</div>
+			<div class="swiper-slide">第四張</div>
+			<div class="swiper-slide">第五張</div>
+		</div>
+		<!-- If we need pagination -->
+		<div class="swiper-pagination"></div>
+
+		<!-- If we need navigation buttons -->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+
+		<!-- If we need scrollbar -->
+		<!-- <div class="swiper-scrollbar"></div> -->
+	</div>
+
+	<div class="blocking"></div>
+
+
+	<script src="js/lightbox.js"></script>
+	<script src="js/swiper.min.js"></script>
+
+	var a;
+	a = {b:1};
+	var b;
+	b = a;
+	b.b = 2;
+	console.log(a);
+	console.log(b);
+
+	</script>
 </body>
+
 </html>

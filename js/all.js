@@ -171,8 +171,51 @@ $(document).ready(function () {
 	//用animate實作回到頁頂的功能
 
 
-	$('a[href$=".pdf"]').addClass('fas fa-file-pdf');
-	$('a[href$=".png"]').addClass('fas fa-file-image');
+	$('.fontAwesomeDemo a[href$=".pdf"]').addClass('fas fa-file-pdf');
+	$(".fontAwesomeDemo a[href$='.png']").addClass('fas fa-file-image');
 	//讓fontAwesome自動偵測a連結類型，並加上相關圖片
+
+	lightbox.option({
+		'resizeDuration': 200,
+		'wrapAround': true
+		//首尾循環
+	})
+	//燈箱客製化效果
+
+	var mySwiper = new Swiper ('.swiper-container', {
+		// Optional parameters
+		
+		//direction: 'vertical'
+		//direction default為水平輪播
+
+		speed: 400,
+		//跳到下一張的動畫長度
+
+		loop: true,
+		//true=首尾相連
+
+		autoplay: {
+			delay: 3000,
+		  },
+		//自動播放，每三秒換一次
+
+		effect: "coverflow",
+	
+		// If we need pagination
+		pagination: {
+		  el: '.swiper-pagination',
+		},
+	
+		// Navigation arrows
+		navigation: {
+		  nextEl: '.swiper-button-next',
+		  prevEl: '.swiper-button-prev',
+		},
+	
+		// And if we need scrollbar
+		// scrollbar: {
+		//   el: '.swiper-scrollbar',
+		// },
+	  })
 
 });

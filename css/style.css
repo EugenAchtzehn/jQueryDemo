@@ -323,3 +323,8 @@ td, th{
 	text-decoration: none;
 	color: gray;
 }
+
+.swiper-container {
+    width: 618px;
+    height: 246px;
+}
