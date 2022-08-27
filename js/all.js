@@ -221,11 +221,23 @@ $(document).ready(function () {
     // },
   });
 
+  // $('#slick-sec').slick({
+  //   infinite: true,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 3,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  // });
+
   $('#slick-sec').slick({
     infinite: true,
+    // 每次同時顯示多少 slide
     slidesToShow: 3,
-    slidesToScroll: 3,
+    // 每次捲動移動幾張 slide
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
   });
+
+  $('.single-slick-container').slick();
 });
